@@ -33,86 +33,28 @@
             </tr>
         </thead>
         <tbody>
+            {% for alum in alumno%}
             <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
                 <th scope="row" class="px-6 py-4 font-medium text-heading whitespace-nowrap">
-                    Mario Juan
+                    {{ alum.nombre }}
                 </th>
                 <td class="px-6 py-4">
-                    Lopez
+                    {{ alum.apaterno }}
                 </td>
                 <td class="px-6 py-4">
-                    lopez@gmail.com
+                    {{ alum.email }}
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Editar</a>
+                    <a href="modificar?id={{ alum.id }}" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Editar</a>
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Detalles</a>
+                    <a href="detalles?id={{ alum.id }}" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Detalles</a>
                 </td>
                 <td class="flex items-center px-6 py-4">
                   <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Eliminar</a>
                 </td>
             </tr>
-            <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
-                <th scope="row" class="px-6 py-4 font-medium text-heading whitespace-nowrap">
-                    Juan
-                </th>
-                <td class="px-6 py-4">
-                    Ramirez
-                </td>
-                <td class="px-6 py-4">
-                    ramirez@gmail.com
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Editar</a>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Detalles</a>
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Eliminar</a>
-                </td>
-            </tr>
-            <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
-                <th scope="row" class="px-6 py-4 font-medium text-heading whitespace-nowrap">
-                    Guadalupe Veronica
-                </th>
-                <td class="px-6 py-4">
-                    Macias
-                </td>
-                <td class="px-6 py-4">
-                    iperez@utleon.edu.mx
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Editar</a>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Detalles</a>
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Eliminar</a>
-                </td>
-            </tr>
-            <tr class="bg-neutral-primary-soft border-b border-default hover:bg-neutral-secondary-medium">
-                <th scope="row" class="px-6 py-4 font-medium text-heading whitespace-nowrap">
-                    Dario
-                </th>
-                <td class="px-6 py-4">
-                    Muñoz
-                </td>
-                <td class="px-6 py-4">
-                    mgomez@alumnos.unimundial.edu.mx
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Editar</a>
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Detalles</a>
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Eliminar</a>
-                </td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </div>
